@@ -1,3 +1,166 @@
-p{  font-size: 2em;
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-}
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+     max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+    }
+
+    .item-flex{     
+      flex: 0 1 50%;
+    }
+
+    .up-container{
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      margin-top: 100px;
+    }
+
+    .blue-square{
+      background-color: #5166dd;
+      float: right;
+      width: 500px;
+      height: 350px;
+      border-radius: 200px 0 0 200px;
+       position: absolute;
+       right: 0;
+       bottom: 0;
+       z-index: -100;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;    
+    }
+
+    /* Logo */
+    .navbar .logo img {
+      height: 40px;
+    }
+
+    /* Menú */
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #333;
+      padding: 6px 8px;
+      transition: color 0.3s;
+    }
+
+    /* Hover rojo */
+    .navbar ul li a:hover {
+      color: #ff0000;
+    }
+
+    /* Botón LOGIN */
+    .navbar .btn-login {
+      background-color: #fb5859;
+      color: #fff;
+      padding: 8px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      border: 2px solid #fb5859; /* borde rojo puro */
+    }
+
+    .navbar .btn-login:hover {
+      background-color: #ffffff!important;
+      color: #fb5859!important;
+      border: 2px solid #fb5859; /* borde rojo puro */  
+    }
+       .entrance .btn-buy-chrome {
+      background-color: #5166e3;
+      color: #fff;
+      padding: 15px 24px;
+      margin-right: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      border: 2px solid #5166e3; /* borde rojo puro */
+    }
+
+    .entrance .btn-buy-chrome:hover {
+      background-color: #ffffff!important;
+      color: #5166e3!important;
+      border: 2px solid #5166e3; /* borde rojo puro */  
+    }
+
+    .entrance .btn-buy-firefox {
+      background-color: #b6b7b7;
+      color: #3a3939;
+      padding: 15px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      border: 2px solid #b6b7b7; /* borde rojo puro */
+    }
+
+    .entrance .btn-buy-firefox:hover {
+      background-color: #ffffff!important;
+      color: #3a3939!important;
+      border: 2px solid #b6b7b7; /* borde rojo puro */  
+    }
+
+
+    .entrance h1{
+      font-size: 3em;
+      margin-bottom: 20px;
+      font-weight: bold;
+      margin-top: 100px;;
+    }
+
+    .entrance h2{
+      font-size: 1.3em;
+      margin-bottom: 50px;
+      font-weight: lighter;
+      color: rgb(142, 137, 137);
+    }
+
+    /* Responsive básico */
+    @media (max-width: 768px) {
+      .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 80px;
+        right: 40px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+
+      .navbar ul.active {
+        display: flex;
+      }
+
+      .navbar .menu-toggle {
+        display: block;
+        cursor: pointer;
+      }
+    }
+
+    .navbar .menu-toggle {
+      display: none;
+      font-size: 24px;
+      user-select: none;
+    }
