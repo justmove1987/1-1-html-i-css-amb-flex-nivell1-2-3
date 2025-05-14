@@ -425,9 +425,7 @@
 
     /* Responsive básico */
     @media (max-width: 768px) {
-      .maincontent{
-         
-      }
+
       h1, h2, h3{
         text-align: center!important;
         padding: 0px 20px; 
