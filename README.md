@@ -14,7 +14,7 @@ HTML i CSS
 
 ▶️Execució
 
-Instruccions per a l'execució del projecte un cop instal·lat.
+[Instruccions per a l'execució del projecte un cop instal·lat.](https://justmove1987.github.io/1-1-html-i-css-amb-flex-nivell1-2-3/)
 
 
 
