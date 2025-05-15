@@ -242,10 +242,11 @@
       margin-top: 20px;
     }
 
-    .center{
+    .container-6 .center{
       margin: 0 auto;
       text-align: center;
       margin-top: 50px;
+      margin-bottom: 50px;
     }
 
 
@@ -458,7 +459,6 @@
       background: white;
       border-radius: 5px;
       overflow: hidden;
-      border-top: 2px solid #eee;
       border-bottom: 2px solid #eee;
       transition: box-shadow 0.3s;
     }
@@ -499,6 +499,103 @@
       padding: 15px 20px;
     }
 
+    .accordion-header:hover{
+      color: #fb5859;
+    }
+
+    .footer-container{
+      background-color: #5166dd;
+      padding: 40px 20px;
+    }
+    .footer-container h4{
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .footer-container h3{
+      color: #ffffff;
+      text-align: center;
+      font-size: 2em;
+    }
+
+    .contact-container {
+     padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.email-input {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 6px;
+  width: 250px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.email-input {
+    margin-right: inherit;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+  padding: 12px 20px;
+  background-color: #f65e5e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #e04e4e;
+}
+
+.navbar-footer {
+  background-color: #1f2344;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  color: white;
+  width: 100%;
+}
+
+.navbar-footer .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navbar-footer .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-footer .nav-links a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.navbar-footer .social-icons a {
+  color: white;
+  margin-left: 20px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.navbar-footer .social-icons a:hover {
+  color: #ccc;
+}
+
 
     /* Responsive básico */
     @media (max-width: 768px) {
@@ -506,6 +603,9 @@
       h1, h2, h3{
         text-align: center!important;
         padding: 0px 20px; 
+      }
+      .bloque4 h3{
+        padding: 0px 0px;
       }
       .navbar {
         padding-top: 20px!important;
@@ -537,12 +637,24 @@
         display: block;
         cursor: pointer;
       }
+
+      .tabs-text {
+    padding: 0px !important;
+}
+
+      .buttons .btn-1 {
+    padding: 10px 16px;
+}
+      .buttons .btn-2 {
+    padding: 10px 16px;
+}
        .container-2 {
       flex-direction: column;
     }
     .buttons{
       margin: 0 auto;
       text-align: center;
+      margin-top: 50px;
     }
     .blue-square {
     width: 351px;
@@ -551,7 +663,7 @@
   .blue-square-2 {
     width: 351px;
     height: 226px;
-    top: 190px;
+    top: 230px;
     bottom: inherit;
   }
     .bloque1 {
@@ -580,6 +692,7 @@
       }
       .tab-buttons {
       flex-direction: column;
+      margin-bottom: 40px;
     }
 
     .tab-buttons label {
@@ -597,6 +710,42 @@
       flex-direction: column;
       align-items: center;
     }
+
+    .contact-button {
+  width: 250px;
+}
+    .navbar-footer {
+    background-color: #1f2344;
+    display: block;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    color: white;
+    width: 100%;
+}
+.navbar-footer .logo {
+    display: inherit;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.navbar-footer .nav-links {
+    list-style: none;
+display: inherit;
+  gap: 30px;
+  text-align: center;
+}
+.navbar-footer .nav-links li{
+  margin-bottom: 30px;
+}
+.social-icons{
+  text-align: center;
+}
     }
 
     
